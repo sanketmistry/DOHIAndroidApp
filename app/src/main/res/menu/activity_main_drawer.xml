@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group
+        android:id="@+id/grp1"
+        android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_website"
+            android:icon="@drawable/ic_website"
+            android:title="@string/menu1" />
+        <item
+            android:id="@+id/nav_feedback"
+            android:icon="@drawable/ic_feedback"
+            android:title="@string/menu2" />
+    </group>
+    <group
+        android:id="@+id/grp2"
+        android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_twitter"
+            android:icon="@drawable/ic_twitter"
+            android:title="@string/menu3" />
+        <item
+            android:id="@+id/nav_linkedin"
+            android:icon="@drawable/ic_linkedin"
+            android:title="@string/menu4" />
+        <item
+            android:id="@+id/nav_insta"
+            android:icon="@drawable/ic_insta"
+            android:title="@string/menu5" />
+    </group>
+    <item
+        android:id="@+id/app_bar_switch"
+        android:checkable="true"
+        android:checked="true"
+        android:title="Dark mode"
+        android:visible="false"
+        app:actionLayout="@layout/switch_item"
+        app:showAsAction="always" />
+</menu>
